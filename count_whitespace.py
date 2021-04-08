@@ -8,7 +8,12 @@ def count_whitespace1():
     string = file_opener()
     for i in string:
         count_indent = len(i) - len(i.lstrip())
-        print(count_indent, i)
+        if count_indent == 26:
+            print('C|', i)
+        elif count_indent == 16:
+            print('D|', i)
+        else:
+            print(' |', i)
 
 
 if __name__ == '__main__':
