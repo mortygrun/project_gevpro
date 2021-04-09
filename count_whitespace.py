@@ -4,8 +4,7 @@ def file_opener():
 
 
 def create_dictionary():
-    scenebound_dict = {'C|': ['V.O.', 'O.S.'],
-                       'M|': ['CUT TO:', 'DISSOLVE TO:']}
+    scenebound_dict = {'M|': ['CUT TO:', 'DISSOLVE TO:']}
     return scenebound_dict
 
 
