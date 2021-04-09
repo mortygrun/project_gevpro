@@ -19,7 +19,11 @@ def count_whitespace1():
             print('C|', i)
         elif count_indent == 16:
             print('D|', i)
-        else:
+        elif count_indent == 5 and i.isupper():
+            print('S|', i)
+        elif count_indent == 5 and not i.isupper():
+            print('N|', i)
+        elif count_indent < 3:
             print(' |', i)
         for keys, values in scenebound_dict.items():
             for value in values:
