@@ -3,9 +3,16 @@ def file_opener():
         return f.readlines()
 
 
+def create_dictionary():
+    scenebound_dict = {'C|': ['V.O.', 'O.S.'],
+                       'M|': ['CUT TO:', 'DISSOLVE TO:']}
+    return scenebound_dict
+
+
 def count_whitespace1():
     """Counts the whitespaces of every line in a text file."""
     string = file_opener()
+    scenebound_dict = create_dictionary()
     for i in string:
         count_indent = len(i) - len(i.lstrip())
         if count_indent == 26:
@@ -14,6 +21,18 @@ def count_whitespace1():
             print('D|', i)
         else:
             print(' |', i)
+        for keys, values in scenebound_dict.items():
+            for value in values:
+                if value in i:
+                    print(keys, i)
+
+
+def count_whitespace():
+    """Counts the whitespaces of every line in a text file."""
+    string = file_opener()
+    for i in string:
+        count_indent = len(i) - len(i.lstrip())
+        print(count_indent, i)
 
 
 if __name__ == '__main__':
