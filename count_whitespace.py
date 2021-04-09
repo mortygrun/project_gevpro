@@ -23,6 +23,8 @@ def count_whitespace1():
             print('S|', i)
         elif count_indent == 5 and not i.isupper():
             print('N|', i)
+        elif i.lstrip().startswith('(') and i.rstrip().endswith(')'):
+            print('M|', i)
         elif count_indent < 3:
             print(' |', i)
         for keys, values in scenebound_dict.items():
