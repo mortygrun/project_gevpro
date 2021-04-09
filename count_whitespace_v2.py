@@ -1,4 +1,4 @@
-import re
+
 
 def file_opener():
     with open('mi.txt') as f:
@@ -8,6 +8,7 @@ def file_opener():
 def count_whitespace1():
     """Counts the whitespaces of every line in a text file."""
     string = file_opener()
+    metadata = ['CUT TO:', 'DISSOLVE:', 'CUT TO BLACK', 'THE END']
     for i in string:
         count_indent = len(i) - len(i.lstrip())
         if count_indent == 26:
@@ -18,7 +19,7 @@ def count_whitespace1():
             print('S|', i)
         elif count_indent == 5 and not i.isupper():
             print('N|', i)
-        elif i.strip() == 'CUT TO:' or i.strip() == 'DISSOLVE:':
+        elif i.strip() in metadata:
             print('M|', i)
         elif i.strip().startswith('(') and i.strip().endswith(')'):
             print('M|', i)
