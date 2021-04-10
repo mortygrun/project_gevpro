@@ -1,35 +1,37 @@
+import re
+
+
 def file_opener():
-    with open('mi.txt') as f:
+    with open('testchar.txt') as f:
         return f.readlines()
 
 
-def create_dictionary():
-    scenebound_dict = {'M|': ['CUT TO:', 'DISSOLVE TO:']}
-    return scenebound_dict
+def compile_regex():
+    digits = re.compile("[0-9]+")
+    return digits
 
 
 def count_whitespace1():
     """Counts the whitespaces of every line in a text file."""
     string = file_opener()
-    scenebound_dict = create_dictionary()
+    digits = compile_regex()
+    metadata = ['CUT TO:', 'DISSOLVE:', 'CUT TO BLACK', 'THE END']
     for i in string:
         count_indent = len(i) - len(i.lstrip())
-        if count_indent == 26:
-            print('C|', i)
-        elif count_indent == 16:
-            print('D|', i)
-        elif count_indent == 5 and i.isupper():
-            print('S|', i)
-        elif count_indent == 5 and not i.isupper():
-            print('N|', i)
-        elif i.lstrip().startswith('(') and i.rstrip().endswith(')'):
+        if i.strip() in metadata:
             print('M|', i)
-        elif count_indent < 3:
+        elif count_indent >= 26 and not re.search(digits, i):  # all capitalized
+            print('C|', i)
+        elif 16 <= count_indent < 26:  # normal
+            print('D|', i)
+        elif 3 < count_indent < 16 and i.isupper():  # all capitalized
+            print('S|', i)
+        elif 3 < count_indent < 16 and not i.isupper():  # normal
+            print('N|', i)
+        elif i.strip().startswith('(') and i.strip().endswith(')'):
+            print('M|', i)
+        else:
             print(' |', i)
-        for keys, values in scenebound_dict.items():
-            for value in values:
-                if value in i:
-                    print(keys, i)
 
 
 def count_whitespace():
@@ -42,4 +44,3 @@ def count_whitespace():
 
 if __name__ == '__main__':
     count_whitespace1()
-
