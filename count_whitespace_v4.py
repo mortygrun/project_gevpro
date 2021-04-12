@@ -9,7 +9,7 @@ def file_opener():
 
 
 def count_whitespace1():
-    """Counts the whitespaces of every line in a text file."""
+    """Counts the whitespaces of every line in a text file and returns a list of all the dialogues"""
     string = file_opener()
     metadata = ['CUT TO:', 'DISSOLVE:', 'CUT TO BLACK', 'THE END']
     tokenizer = RegexpTokenizer(r'\w+')
@@ -26,7 +26,7 @@ def count_whitespace1():
             all_text_list += ['C|', i]
             # print('C|', i)
         elif 16 <= count_indent < 26 and not i.strip().startswith('(') and not i.isupper():
-            dialogue_list += [i.strip()]
+            dialogue_list += [' '.join(tokenizer.tokenize(i.strip()))]
             all_text_list += ['D|', i]
             # print('D|', i)
         elif 3 < count_indent < 16 and bool(re.match(r'[A-Z]+$', ''.join(tokenizer.tokenize(i)))):
@@ -71,7 +71,7 @@ def tokenize():
 
 def remove_i():
     """ This function returns a list of subtitles (each item is a subtitle) with 'i'
-        removed on the first and last place ""
+        removed on the first and last place """
     subtitles_list_without_i = []
     for i in tokenize():
         if i[0] != 'i' and i[-1] != 'i':
@@ -92,7 +92,7 @@ def compare():
 
 
 def main():
-    print(tokenize())
+    print(count_whitespace1())
 
 
 if __name__ == '__main__':
