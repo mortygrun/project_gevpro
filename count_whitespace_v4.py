@@ -1,9 +1,12 @@
 import re
 from nltk.tokenize import RegexpTokenizer
+import pysrt
+
 
 def file_opener():
     with open('mi.txt') as f:
         return f.readlines()
+
 
 def count_whitespace1():
     """Counts the whitespaces of every line in a text file."""
@@ -22,8 +25,8 @@ def count_whitespace1():
         elif count_indent >= 26:
             all_text_list += ['C|', i]
             # print('C|', i)
-        elif 16 <= count_indent < 26 and not i.strip().startswith('('):
-            dialogue_list += [['D|', i.strip()]]
+        elif 16 <= count_indent < 26 and not i.strip().startswith('(') and not i.isupper():
+            dialogue_list += [i.strip()]
             all_text_list += ['D|', i]
             # print('D|', i)
         elif 3 < count_indent < 16 and bool(re.match(r'[A-Z]+$', ''.join(tokenizer.tokenize(i)))):
@@ -39,7 +42,7 @@ def count_whitespace1():
             all_text_list += [' |', i]
             # print(' |', i)
 
-    return ''.join(all_text_list)
+    return dialogue_list
 
 
 # def count_whitespace():
@@ -50,8 +53,46 @@ def count_whitespace1():
 #         print(count_indent, i)
 
 
+def subtitles_open():
+    # You have to save the .srt file with utf-8 first
+    subs = pysrt.open('mi_utf8.srt')
+    return subs
+
+
+def tokenize():
+    """ This function returns a list of subtitles (each item is a subtitle) """
+    tokenizer = RegexpTokenizer(r'\w+')
+    subtitle_token = subtitles_open()
+    sentence_list = []
+    for i in subtitle_token:
+        sentence_list += [' '.join(tokenizer.tokenize(i.text))]
+    return sentence_list
+
+
+def remove_i():
+    """ This function returns a list of subtitles (each item is a subtitle) with 'i'
+        removed on the first and last place ""
+    subtitles_list_without_i = []
+    for i in tokenize():
+        if i[0] != 'i' and i[-1] != 'i':
+            subtitles_list_without_i += [i]
+        else:
+            subtitles_list_without_i += [i[2:-2]]
+    return subtitles_list_without_i
+
+
+def compare():
+    dialogues = count_whitespace1()
+    subtitles = remove_i()
+    count = 0
+    for i in subtitles:
+        if i in dialogues:
+            print(i)
+        count += 1
+
+
 def main():
-    print(count_whitespace1())
+    print(tokenize())
 
 
 if __name__ == '__main__':
