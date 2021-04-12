@@ -1,9 +1,3 @@
-D|                         MISSION: IMPOSSIBLE
-
-D|                        FINAL SHOOTING SCRIPT
-
-D|                          16TH AUGUST 1995
-
 D|                 Kasimov, Kasimov, good that you called
 
 D|                 us.
@@ -91,10 +85,6 @@ D|                 Oh yeah?
 D|                 Claire. 
 
 D|                 Jack. 
-
-D|                 IS THERE ANY PARTICULAR REASON WE'RE NOT 
-
-D|                 OUT OF HERE YET?! 
 
 D|                 Just waiting for you, tubs. 
 
@@ -193,8 +183,6 @@ D|                 your actions.  This tape will self-
 D|                 destruct in five seconds.  Good luck, 
 
 D|                 Jim! 
-
-D|                          PRAGUE 
 
 D|                 Look to your right, then back to me. 
 
@@ -622,10 +610,6 @@ D|                 Cut all radio communications.  Repeat.
 
 D|                 Cut all radio communications.  
 
-D|                 JIM!
-
-D|                 CLAIRE!
-
 D|                 Satcom seven.
 
 D|                 Central Europe.  Unsecured.
@@ -842,37 +826,19 @@ D|                 devil and I'm going to make sure you do
 
 D|                 it in hell. 
 
-D|                 SELECT USENET GROUP
-
 D|                 job 314
 
 D|                 Job.  Job 3:14.  March fourteen.  Job 31 
 
 D|                 March. 
 
-D|                 SEARCHING STRING NOT FOUND
-
 D|                 max.com
-
-D|                 SEARCH STRING NOT FOUND
 
 D|                 Job three fourteen.  Job --
 
 D|                      the Biblical pronunciation) 
 
 D|                 It's Job! 
-
-D|                 BIBLE
-
-D|                 126 ENTRIES FOUND, SPECIFY GROUP
-
-D|                 BOOK OF JOB
-
-D|                 WELCOME TO THE BOOK OF JOB DISCUSSION 
-
-D|                 GROUP.  WHICH CHAPTER AND VERSE DO 
-
-D|                 YOU WISH TO POST YOUR ENTRY UNDER?
 
 D|                 Max -- Goods tainted.  Consider extremely 
 
@@ -1170,8 +1136,6 @@ D|                 Fifty-seven. Fifty-nine.
 
 D|                 Switch it on.  Keep cleaning. 
 
-D|                 GOD D- 
-
 D|                 Oh dear, Gunther will never let me use 
 
 D|                 one of his apartments again. 
@@ -1311,14 +1275,6 @@ D|                 We need help, and we don't have time.
 D|                 They have to be local. 
 
 D|                 What kind of help? 
-
-D|                 I.M.F. PERSONNEL DATABASE 
-
-D|                 ENTER PASSWORD NOW
-
-D|                 CATEGORY?
-
-D|                 DISAVOWED
 
 D|                 Simple game.  Four players. 
 
@@ -1548,8 +1504,6 @@ D|                 Oh, for -- do we have to evacuate?
 
 D|                 That's S.O.P.. 
 
-D|                 S.O.P.. 
-
 D|                 We picked up alarms in sectors three, 
 
 D|                 seven, and twelve. 
@@ -1606,8 +1560,6 @@ D|                 from here on in, absolute silence.
 
 D|                 Oh, God. 
 
-D|                 INTRUSION COUNTERMEASURES ON
-
 D|                 Type this password: AW96B6.  Return.  Go 
 
 D|                 to the files menu, find the NOC list 
@@ -1625,8 +1577,6 @@ D|                 going to download.  Edit menu.  Select
 D|                 "copy to disc".  You're downloading. 
 
 D|                 When it's all green it's done. 
-
-D|                 DOWNLOADING
 
 D|                 Holy mother of God. 
 
@@ -1647,10 +1597,6 @@ D|                 Phew! (to himself) NOC list.
 D|                 Merci. 
 
 D|                 We're not outta here yet. 
-
-D|                 KEYSTROKE LOG -- FILE DOWNLOAD 
-
-D|                     11/18/95 9.58 AM
 
 D|                 Think, for Christ's sake, you guys are 
 
@@ -1716,11 +1662,7 @@ D|                 Krieger.
 
 D|                 Stay out of this. 
 
-D|                 OR 
-
 D|                 Lachez - moi 
-
-D|                 OR  
 
 D|                 T'agueue 
 
@@ -2122,8 +2064,6 @@ D|                 Is this the only way?
 
 D|                 Yes.......come here....viens pres moi...
 
-D|                       TGV.  LONDON TERMINUS
-
 D|                 How long to the London Terminus?
 
 D|                 Twenty, twenty-five minutes.
@@ -2147,8 +2087,6 @@ D|                 Thereís a piece of black cloth under your
 D|                 seat.  Tear it away and youíll find the
 
 D|                 disk.
-
-D|                 IDENTITY MATCH
 
 D|                 Ha, dear boy!  I do hope this doesnít
 
@@ -2204,15 +2142,11 @@ D|                 Two cars.  Where are you?
 
 D|                 You are my eyes.  Stay with him.
 
-D|                 LIST COMPLETE
-
 D|                 Heís in the baggage car.
 
 D|                      compartment)
 
 D|                 Iíll be there.
-
-D|                 MODEM DENIED
 
 D|                 Whatís the problem.
 
@@ -2249,8 +2183,6 @@ D|                 looking for laptops.
 D|                 Good idea.
 
 D|                 Excuse me, Sir, your telephone...
-
-D|                 TRANSFER IN PROGRESS
 
 D|                 Itís working.
 
@@ -2431,10 +2363,6 @@ D|                 Itís all right, Ethan..youíll bring me
 D|                 back...wonít you...
 
 D|                 I always have, Claire.. 
-
-D|                 CONNECTION TERMINATED. 
-
-D|                     TRANSFER LOST.
 
 D|                 Damn!
 
