@@ -85,10 +85,14 @@ def compare():
     dialogues = count_whitespace1()
     subtitles = remove_i()
     count = 0
+    count_unmatch = 0
     for i in subtitles:
         if i in dialogues:
-            print(i)
-        count += 1
+            count += 1
+        else:
+            count_unmatch +=1
+       print(count)
+       print(count_unmatch) 
 
 
 def main():
