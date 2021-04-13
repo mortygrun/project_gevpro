@@ -42,7 +42,7 @@ def count_whitespace1():
             all_text_list += [' |', i]
             # print(' |', i)
 
-    return all_text_list
+    return dialogue_list
 
 
 def dialogue():
@@ -121,7 +121,7 @@ def time():
 
 
 def compare():
-    dialogues = count_whitespace1()
+    dialogues = dialogue()
     subtitles = remove_i()
     count = 0
     count_unmatch = 0
@@ -150,7 +150,7 @@ def script_time():
     script = []
     for i in index_list:
         correct_time_subtitles += [time()[i[0]]]
-        script += [count_whitespace1()[i[1]]]
+        script += [dialogue()[i[1]]]
         # print(time()[i], i)
     # print(index_list)
     # print(correct_time_subtitles)
@@ -167,7 +167,7 @@ def insert_time_in_script():
 
 
 def main():
-    print(compare())
+    print(script_time())
 
 
 if __name__ == '__main__':
